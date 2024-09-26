@@ -243,6 +243,17 @@ footer p {
   color: rgba(55, 65, 81, 0.6);
 }
 
+/* Quote Styles */
+.quote-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
 @media screen and (max-width: 640px) {
   .home-container {
     width: 100%;
