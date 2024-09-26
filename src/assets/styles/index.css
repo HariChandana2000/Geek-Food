@@ -1,0 +1,325 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Main Container Styles */
+.main-container {
+  width: 100%;
+  height: fit-content;
+}
+
+/* Header Styles */
+.nav-link {
+  font-weight: 600;
+  color: white;
+  margin-right: 15px;
+}
+
+.nav-link:hover {
+  color: #0d6efd;
+}
+
+.custom-nav-container {
+  margin: 0;
+  padding: 5px 15px;
+  max-width: 100%;
+}
+
+.nav-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.custom-nav-brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.6rem;
+}
+
+/* HomeScreen Sytles */
+.home-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../home-bg.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+  padding-left: 50px;
+  gap: 1rem;
+  text-align: center;
+}
+
+.home-container .block {
+  display: block;
+  color: rgba(190, 10, 60, 1);
+}
+
+.home-container h1 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.home-container p {
+  width: 40%;
+  font-size: 1.25rem;
+  line-height: 1.625;
+}
+
+.home-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.home-buttons .danger-btn {
+  padding: 10px 45px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.home-buttons .light-btn {
+  padding: 10px 45px;
+  color: #dc3545;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* about section */
+.about {
+  width: 100%;
+  height: fit-content;
+}
+
+.about-desc {
+  padding-left: 6rem;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  padding-right: 2rem;
+  height: 100%;
+  background-color: rgba(243, 244, 246, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-desc h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+.about-desc p {
+  color: rgba(75, 85, 99, 1);
+  margin-top: 10px;
+  width: 100%;
+}
+
+.about-desc button {
+  width: 150px;
+  background-color: rgba(79, 70, 229, 1);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 30px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.about-desc button:hover {
+  border: 1px solid rgba(79, 70, 229, 1);
+  color: rgba(79, 70, 229, 1);
+  background-color: transparent;
+}
+
+.custom-about-img {
+  position: absolute;
+  z-index: 10;
+  width: 52%;
+  height: 70%;
+  object-fit: cover;
+}
+
+/* Review Section */
+.review-details {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.reviewer-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.reviewer-details p {
+  margin: 0;
+  padding: 0;
+}
+
+.reviewer-name {
+  font-weight: 500;
+}
+
+/* Footer Styles */
+footer {
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(243, 244, 246, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: rgba(55, 65, 81, 1);
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: rgba(55, 65, 81, 0.6);
+}
+
+.footer-logo img {
+  width: 200px;
+}
+
+footer p {
+  color: rgba(107, 114, 128, 1);
+  width: 35%;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.social-icons svg {
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons svg:hover {
+  color: rgba(55, 65, 81, 0.6);
+}
+
+@media screen and (max-width: 640px) {
+  .home-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: hsla(0, 0%, 100%, 0.75) url("../home-bg.avif");
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 1rem;
+    text-align: center;
+  }
+  .home-container h1 {
+    font-weight: 800;
+    font-size: 2rem;
+  }
+  .home-container p {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.625;
+  }
+
+  .home-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .home-buttons .danger-btn {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    width: 90%;
+  }
+
+  .home-buttons .light-btn {
+    color: #dc3545;
+    font-size: 14px;
+    font-weight: 600;
+    width: 90%;
+  }
+
+  .about-desc h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .about-desc {
+    padding: 2rem;
+    background-color: rgba(243, 244, 246, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer p {
+    color: rgba(107, 114, 128, 1);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .custom-about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+}
